@@ -6,8 +6,8 @@ author: 'codex'
 
 style:
   color_scheme: weixin
-  reset_ascii_mode: true
-  keyboard_height: 350
+  reset_ascii_mode_on_focus_change: true
+  keyboard_height: 250
   keyboard_height_land: 200
   key_height: 66
   key_width: 10.0
@@ -32,7 +32,7 @@ style:
   keyboard_padding: 9
   keyboard_padding_left: 0
   keyboard_padding_right: 40
-  keyboard_padding_bottom: 52
+  keyboard_padding_bottom: 10
   keyboard_padding_land: 4
   keyboard_padding_land_bottom: 0
   preview_height: 64
