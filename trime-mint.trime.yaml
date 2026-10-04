@@ -17,6 +17,7 @@ style:
   key_border: 1
   key_text_size: 29
   key_font: font.ttf
+  hanb_font: notosc.otf
   label_text_size: 24
   key_long_text_size: 24
   symbol_text_size: 11
