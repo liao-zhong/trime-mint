@@ -7,11 +7,11 @@ author: 'codex'
 style:
   color_scheme: weixin
   reset_ascii_mode_on_focus_change: true
-  keyboard_height: 250
+  keyboard_height: 244
   keyboard_height_land: 200
   key_height: 66
   key_width: 10.0
-  horizontal_gap: 8
+  horizontal_gap: 5
   vertical_gap: 10
   round_corner: 12
   key_border: 1
@@ -32,7 +32,7 @@ style:
   keyboard_padding: 9
   keyboard_padding_left: 0
   keyboard_padding_right: 40
-  keyboard_padding_bottom: 16
+  keyboard_padding_bottom: 20
   keyboard_padding_land: 4
   keyboard_padding_land_bottom: 0
   preview_height: 64
@@ -467,7 +467,7 @@ preset_keyboards:
     ascii_mode: 1
     width: 20
     height: 56
-    keyboard_height: 250
+    keyboard_height: 244
     keys:
       - {click: '+', long_click: '*', symbol_text_size: 16, key_symbol_color: num_hint_color, __include: styl/gray}
       - {click: '1'}
@@ -495,7 +495,7 @@ preset_keyboards:
     ascii_mode: 1
     width: 10
     height: 58
-    keyboard_height: 250
+    keyboard_height: 244
     keys:
       - {height: 100, click: '。'}
       - {click: '，'}
@@ -539,7 +539,7 @@ preset_keyboards:
     ascii_mode: 1
     width: 10
     height: 58
-    keyboard_height: 250
+    keyboard_height: 244
     keys:
       - {height: 100, click: '_'}
       - {click: '—'}
@@ -583,7 +583,7 @@ preset_keyboards:
     ascii_mode: 1
     width: 10
     height: 58
-    keyboard_height: 250
+    keyboard_height: 244
     keys:
       - {height: 100, click: '_'}
       - {click: '—'}
@@ -627,7 +627,7 @@ preset_keyboards:
     ascii_mode: 1
     width: 10
     height: 58
-    keyboard_height: 250
+    keyboard_height: 244
     keys:
       - {height: 100, click: '【'}
       - {click: '】'}
@@ -671,7 +671,7 @@ preset_keyboards:
     ascii_mode: 1
     width: 10
     height: 58
-    keyboard_height: 250
+    keyboard_height: 244
     keys:
       - {height: 100, click: '$'}
       - {click: '¥'}
@@ -715,7 +715,7 @@ preset_keyboards:
     ascii_mode: 1
     width: 10
     height: 58
-    keyboard_height: 250
+    keyboard_height: 244
     keys:
       - {height: 100, click: '+'}
       - {click: '-'}
@@ -759,7 +759,7 @@ preset_keyboards:
     ascii_mode: 1
     width: 10
     height: 58
-    keyboard_height: 250
+    keyboard_height: 244
     keys:
       - {height: 100, click: '①'}
       - {click: '②'}
