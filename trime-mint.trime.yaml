@@ -21,6 +21,7 @@ style:
   hanb_font:
     - notosc.otf
     - HanaMinB.ttf
+    - PlangothicP2-Regular.ttf
   label_text_size: 24
   key_long_text_size: 24
   symbol_text_size: 11
