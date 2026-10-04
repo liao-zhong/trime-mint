@@ -16,13 +16,17 @@ style:
   round_corner: 12
   key_border: 1
   key_text_size: 29
-  key_font: font.ttf
-  hanb_font: notosc.otf
+  key_font:
+    - font.ttf
+  hanb_font:
+    - notosc.otf
+    - HanaMinB.ttf
   label_text_size: 24
   key_long_text_size: 24
   symbol_text_size: 11
   candidate_text_size: 26
-  candidate_font: font.ttf
+  candidate_font:
+    - font.ttf
   candidate_view_height: 42
   candidate_padding: 8
   candidate_corner_radius: 10
