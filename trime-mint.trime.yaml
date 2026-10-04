@@ -28,7 +28,7 @@ style:
   candidate_spacing: 0
   comment_position: overlay
   comment_vertical_bias: 0.0
-  candidate_text_vertical_bias: 0.62
+  candidate_text_vertical_bias: 1.2
   comment_text_size: 11
   comment_height: 5
   keyboard_padding: 9
