@@ -22,13 +22,13 @@ style:
   symbol_text_size: 11
   candidate_text_size: 26
   candidate_font: font.ttf
-  candidate_view_height: 40
+  candidate_view_height: 48
   candidate_padding: 8
   candidate_corner_radius: 10
   candidate_spacing: 0
   comment_position: overlay
-  comment_vertical_bias: 0.05
-  candidate_text_vertical_bias: 0.55
+  comment_vertical_bias: 0.0
+  candidate_text_vertical_bias: 0.62
   comment_text_size: 11
   comment_height: 12
   keyboard_padding: 9
