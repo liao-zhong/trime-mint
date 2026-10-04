@@ -22,7 +22,7 @@ style:
   symbol_text_size: 11
   candidate_text_size: 26
   candidate_font: font.ttf
-  candidate_view_height: 48
+  candidate_view_height: 42
   candidate_padding: 8
   candidate_corner_radius: 10
   candidate_spacing: 0
@@ -30,7 +30,7 @@ style:
   comment_vertical_bias: 0.0
   candidate_text_vertical_bias: 0.62
   comment_text_size: 11
-  comment_height: 12
+  comment_height: 5
   keyboard_padding: 9
   keyboard_padding_left: 0
   keyboard_padding_right: 40
