@@ -19,19 +19,20 @@
 
 1. 安装[同文输入法（Trime）](https://github.com/osfans/trime/releases)，并设为当前输入法
 2. 把仓库文件复制到手机目录 `Android/data/com.osfans.trime/files/rime/`：
-   - `trime-mint.trime.yaml`、`font.ttf` → 放到 `rime/` 下
+   - `trime-mint.trime.yaml` → 放到 `rime/` 下
+   - `font.ttf`、`notosc.otf` → 放到 `rime/fonts/` 下（没有 fonts 文件夹就新建一个）
    - `backgrounds/` 里的 6 张图片 → 放到 `rime/backgrounds/` 下
 3. 打开 Trime 设置 → 键盘样式 → 主题 → 选择「微信输入法」
 4. （可选）想跟随系统深浅模式：在 Trime 设置里打开「跟随系统深色」
 
 ## 字体
 
-字体为 HarmonyOS Sans SC Black（华为发布的免费字体，可商用），重命名为 `font.ttf`。
-不需要自定义字体时可删除，会自动回退到系统字体。
-
-
-
-- 字体版权归华为所有，遵循其免费字体授权条款。
+- `font.ttf`：**HarmonyOS Sans SC Black**（华为发布的免费字体，可商用），键盘主字体。
+- `notosc.otf`：**Noto Sans CJK SC**（开源 OFL 许可），**兜底字体**——当主字体缺字
+  （生僻字候选）时自动回退到它，避免显示「豆腐块」（□）。
+- 两个字体都放在 `rime/fonts/` 目录内，缺一不可（只放 font.ttf 时生僻候选会变豆腐块）。
+- 不需要自定义字体时可全部删除，会自动回退到系统字体。
+- 字体版权归华为 / Google 所有，遵循各自的免费字体授权条款。
 
 ## 换设备 / 跨设备说明
 
