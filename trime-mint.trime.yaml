@@ -1,0 +1,800 @@
+# 微信输入法风格 v3 —— 同文输入法(Trime)主题
+# 鸿蒙中粗 / 小写字母 / 微信数字键盘 / 第一版符号键盘 / Shift 白底黑实心 / 候选辅助码
+config_version: "3.0"
+name: 微信输入法
+author: 'codex'
+
+style:
+  color_scheme: weixin
+  reset_ascii_mode: true
+  keyboard_height: 350
+  keyboard_height_land: 200
+  key_height: 66
+  key_width: 10.0
+  horizontal_gap: 8
+  vertical_gap: 10
+  round_corner: 12
+  key_border: 1
+  key_text_size: 29
+  key_font: font.ttf
+  label_text_size: 24
+  key_long_text_size: 24
+  symbol_text_size: 11
+  candidate_text_size: 26
+  candidate_font: font.ttf
+  candidate_view_height: 52
+  candidate_padding: 8
+  candidate_corner_radius: 10
+  candidate_spacing: 0
+  comment_position: top
+  comment_text_size: 11
+  comment_height: 18
+  keyboard_padding: 9
+  keyboard_padding_left: 0
+  keyboard_padding_right: 40
+  keyboard_padding_bottom: 52
+  keyboard_padding_land: 4
+  keyboard_padding_land_bottom: 0
+  preview_height: 64
+  preview_text_size: 40
+  preview_offset: -12
+  auto_caps: false
+  enter_label_mode: 0
+  enter_labels:
+    go: 前往
+    done: 完成
+    next: 下个
+    pre: 上个
+    search: 搜索
+    send: 发送
+    default: 回车
+
+preedit:
+  horizontal_padding: 8
+  top_start_radius: 4
+  top_end_radius: 4
+  foreground:
+    font_size: 16
+
+window:
+  insets:
+    vertical: 4
+    horizontal: 4
+  item_padding:
+    horizontal: 16
+  foreground:
+    label_font_size: 20
+    text_font_size: 20
+    comment_font_size: 16
+
+fallback_colors:
+  candidate_text_color: text_color
+
+preset_color_schemes:
+  weixin:
+    name: 微信输入法
+    author: codex
+    dark_scheme: weixin_dark
+    # 候选栏
+    back_color: 0xE1E3E8
+    candidate_background: 0xE1E3E8
+    candidate_text_color: 0x2B2B2B
+    comment_text_color: 0x9A9A9A
+    label_color: 0x9A9A9A
+    hilited_candidate_back_color: 0xFFFFFF
+    hilited_candidate_text_color: 0x23C891
+    hilited_label_color: 0x23C891
+    hilited_comment_text_color: 0x23C891
+    # 编码(正在输入的拼音)
+    text_color: 0x9A9A9A
+    hilited_text_color: 0x2B2B2B
+    hilited_back_color: 0xE1E3E8
+    text_back_color: 0xE1E3E8
+    # 键盘
+    keyboard_back_color: 0xDCDEE3
+    root_background: 0xDCDEE3
+    # 按键背景：白色圆角 + 底部阴影（9-patch）
+    key_back_color: keybg.9.png
+    key_border_color: 0xEDEEF1
+    key_text_color: 0x2B2B2B
+    key_symbol_color: 0x9AA0AA
+    hilited_key_back_color: 0xD5D7DD
+    hilited_key_text_color: 0x1A1A1A
+    hilited_key_symbol_color: 0xB0B2B8
+    off_key_back_color: 0xB7BCC4
+    off_key_border_color: 0xB9BCC6
+    off_key_text_color: 0x2B2B2B
+    off_key_symbol_color: 0x2B2B2B
+    hilited_off_key_back_color: 0xA6AAB6
+    hilited_off_key_text_color: 0x2B2B2B
+    # Shift 激活（on 状态）：白底黑实心箭头
+    on_key_back_color: keybg.9.png
+    on_key_text_color: 0x1A1A1A
+    on_key_symbol_color: 0x83909F
+    hilited_on_key_back_color: 0xF0F1F3
+    space_back_color: 0xFFFFFF
+    hilited_space_back_color: 0xD5D7DD
+    enter_back_color: 0x1A1A1A
+    enter_text_color: 0xFFFFFF
+    enter_symbol_color: 0xFFFFFF
+    hilited_enter_back_color: 0x000000
+    preview_back_color: 0xFFFFFF
+    preview_text_color: 0x2B2B2B
+    shadow_color: 0x00000000
+    # 键级样式字段（供 styl/* 与按键引用，深浅色自动切换）
+    function_key_bg: keybg_gray.9.png
+    function_key_bg_pressed: 0xA6AAB6
+    function_key_text: 0x1A1A1A
+    function_key_text_pressed: 0x1A1A1A
+    green_key_bg: keybg_green.9.png
+    green_key_bg_pressed: 0x1FB584
+    green_key_text: 0xFFFFFF
+    plain_key_bg_pressed: 0xD5D7DD
+    shift_arrow_color: 0x7A828C
+    num_hint_color: 0x5F6B73
+    sym_page_selected: 0xC9CDD4
+  weixin_dark:
+    name: 微信输入法·深色
+    author: codex
+    # 候选栏
+    back_color: 0x202020
+    candidate_background: 0x202020
+    candidate_text_color: 0xE8E8E8
+    comment_text_color: 0x8F8F8F
+    label_color: 0x8F8F8F
+    hilited_candidate_back_color: 0x3A3A3C
+    hilited_candidate_text_color: 0x23C891
+    hilited_label_color: 0x23C891
+    hilited_comment_text_color: 0x23C891
+    # 编码（正在输入的拼音）
+    text_color: 0x8F8F8F
+    hilited_text_color: 0xE8E8E8
+    hilited_back_color: 0x202020
+    text_back_color: 0x202020
+    # 键盘背景
+    keyboard_back_color: 0x202020
+    root_background: 0x202020
+    # 按键：深灰圆角 + 暗色底部阴影（9-patch）
+    key_back_color: keybg_dark.9.png
+    key_border_color: 0x202020
+    key_text_color: 0xECECEC
+    key_symbol_color: 0x8F8F8F
+    hilited_key_back_color: 0x6E6E6E
+    hilited_key_text_color: 0xFFFFFF
+    hilited_key_symbol_color: 0xA8A8AC
+    off_key_back_color: 0x414141
+    off_key_border_color: 0x414141
+    off_key_text_color: 0xECECEC
+    off_key_symbol_color: 0xECECEC
+    hilited_off_key_back_color: 0x555555
+    hilited_off_key_text_color: 0xFFFFFF
+    # Shift 激活（on 状态）：浅底深箭头
+    on_key_back_color: 0xE8E8E8
+    on_key_text_color: 0x1A1A1A
+    on_key_symbol_color: 0x83909F
+    hilited_on_key_back_color: 0xD5D7DD
+    space_back_color: 0x5F5F5F
+    hilited_space_back_color: 0x6E6E6E
+    enter_back_color: 0x23C891
+    enter_text_color: 0xFFFFFF
+    enter_symbol_color: 0xFFFFFF
+    hilited_enter_back_color: 0x1FB584
+    preview_back_color: 0x3A3A3C
+    preview_text_color: 0xE8E8E8
+    shadow_color: 0x00000000
+    # 键级样式字段（供 styl/* 与按键引用）
+    function_key_bg: keybg_gray_dark.9.png
+    function_key_bg_pressed: 0x4E4E4E
+    function_key_text: 0xECECEC
+    function_key_text_pressed: 0xFFFFFF
+    green_key_bg: keybg_green_dark.9.png
+    green_key_bg_pressed: 0x1FB584
+    green_key_text: 0xFFFFFF
+    plain_key_bg_pressed: 0x3A3A3C
+    shift_arrow_color: 0xECECEC
+    num_hint_color: 0xD0D0D0
+    sym_page_selected: 0x4A4A4E
+
+styl:
+  bigicon:
+    key_text_size: 36
+    key_back_color: function_key_bg
+    hilited_key_back_color: function_key_bg_pressed
+    key_text_color: function_key_text
+    hilited_key_text_color: function_key_text_pressed
+  green:
+    key_back_color: green_key_bg
+    hilited_key_back_color: green_key_bg_pressed
+    key_text_color: green_key_text
+    hilited_key_text_color: green_key_text
+  dark:
+    key_back_color: 0x1A1A1A
+    hilited_key_back_color: 0x000000
+    key_text_color: 0xFFFFFF
+    hilited_key_text_color: 0xFFFFFF
+  voicetext:
+    key_text_color: 0x9A9A9A
+    key_text_size: 14
+  gray:
+    key_back_color: function_key_bg
+    hilited_key_back_color: function_key_bg_pressed
+    key_text_color: function_key_text
+    hilited_key_text_color: function_key_text_pressed
+  plain:
+    key_back_color: 0x00000000
+    hilited_key_back_color: plain_key_bg_pressed
+
+preset_keys:
+  Shift_L: { label: 'ic@arrow_up_bold', send: Shift_L, shift_lock: ascii_long }
+  BackSpace: { label: '⌫', repeatable: true, send: BackSpace }
+  Return: { label: enter_labels, send: Return }
+  Return1: { label: 回车, send: Return }
+  Return_ok: { label: '确定', send: Return }
+  space: { label: ' ', repeatable: false, functional: false, send: space }
+  space1: { label: 空格, repeatable: false, functional: false, send: space }
+  select_all: { label: 全选, functional: false, send: Control+a }
+  cut: { label: 剪切, functional: false, send: Control+x }
+  copy: { label: 复制, functional: false, send: Control+c }
+  paste: { label: 粘贴, functional: false, send: Control+v }
+  Mode_switch: { toggle: ascii_mode, send: SWITCH_CHARSET, states: [中/英, 英/中] }
+  Keyboard_symbols: { label: 符号, send: Eisu_toggle, select: symbols }
+  SwitchSymbols: { label: '', send: FUNCTION, command: switch_hide_key_symbol }
+  Keyboard_cmdsym: { label: '⌘', send: Eisu_toggle, select: symbols }
+  Keyboard_backarrow: { label: '←', send: Eisu_toggle, select: .default }
+  Sym_close: { label: '×', send: Eisu_toggle, select: .default }
+  Sym_page_recent: { label: 'ic@clock_outline', send: Eisu_toggle, select: symbols_recent }
+  Sym_page_cn: { label: '中', send: Eisu_toggle, select: symbols }
+  Sym_page_en: { label: '英', send: Eisu_toggle, select: symbols_en }
+  Sym_page_quote: { label: '《》', send: Eisu_toggle, select: symbols_quote }
+  Sym_page_curr: { label: '$¥€', send: Eisu_toggle, select: symbols_curr }
+  Sym_page_math: { label: '+-×÷', send: Eisu_toggle, select: symbols_math }
+  Sym_page_num: { label: '≡', send: Eisu_toggle, select: symbols_num }
+  Sym_history: { label: 'ic@clock_outline', send: Eisu_toggle, select: symbols }
+  Sym_zh: { label: '中', send: Eisu_toggle, select: symbols }
+  Sym_en: { label: '英', send: Eisu_toggle, select: symbols }
+  Sym_quote: { label: '《》', send: Eisu_toggle, select: symbols }
+  Sym_curr: { label: '$¥€', send: Eisu_toggle, select: symbols }
+  Sym_math: { label: '½±', send: Eisu_toggle, select: symbols }
+  Sym_num: { label: '一二', send: Eisu_toggle, select: symbols }
+  Sym_pinyin: { label: 'à', send: Eisu_toggle, select: symbols }
+  Sym_kana: { label: 'あ', send: Eisu_toggle, select: symbols }
+  Sym_greek: { label: 'Ω', send: Eisu_toggle, select: symbols }
+  Keyboard_number: { label: 123, send: Eisu_toggle, select: number }
+  Keyboard_letter: { label: ABC, send: Eisu_toggle, select: default }
+  Keyboard_default: { label: 返回, send: Eisu_toggle, select: .default }
+  Keyboard_mini: {label: 迷你, send: Eisu_toggle, select: mini}
+  Keyboard_switch: {label: 鍵盤, send: Eisu_toggle, select: .next}
+  liquid_keyboard_switch: { label: 更多, send: FUNCTION, command: liquid_keyboard, option: "更多" }
+  clipboard_window: { label: "剪贴", send: FUNCTION, command: "clipboard_window", option: '0' } #0剪贴板，1收藏夹
+  Menu: { label: 方案, send: MENU }
+  liquid_keyboard_emoji: { label: '☺', send: FUNCTION, command: liquid_keyboard, option: "更多" }
+  liquid_keyboard_exit: { label: 返回, send: FUNCTION, command: liquid_keyboard, option: "-1" }
+  Return2: { label: 回车, send: Return }
+  Hide: { label: '▼', send: BACK }
+  Escape: { label: Esc, send: Escape }
+  Tab: { label: Tab, send: Tab }
+
+liquid_keyboard:
+  # 目前只能直接写参数，不支持变量或者fallback机制。
+  # 缺少参数时，自动从style中加载参数。除非需要指定liquid_keyboard使用与主键盘不同的背景色、背景图，否则不应设置被注释掉的参数。
+  author: "tumuyan"
+  row: 6              #每屏最多显示多少行按键
+  row_land: 5         #横屏每屏最多显示多少行按键
+  key_height: 40      #按键高度
+  key_height_land: 40 #横屏模式按键高度
+  single_width: 60    #single类型的按键宽度
+  vertical_gap: 1     #纵向按键间隙
+  margin_x: 5         #左右按键间隙的1/2
+  fixed_key_bar:  # 固定按键条
+    position: bottom  # 摆放位置（在滚动区域的……） top|bottom|left|right
+    keys:  # 按键（显示名称为对应的label，不能放太多）
+      - liquid_keyboard_exit
+      - space1
+      - BackSpace
+      - Return2
+      - clipboard_window
+      - liquid_keyboard_switch
+  keyboards: [emoji, math, ascii, cn, history, symbollist, list, ids, symbol, tabs, pinyin, script_symbols, jp, grease, rusa, korea, lation, yinbiao, unit, yanwenzi, combing, emoji_full]  #tab列表
+  tabs:
+    name: 更多
+    type: TABS
+  history:
+    name: 常用
+    type: HISTORY
+  emoji:
+    type: SINGLE
+    keys: "🙂😂🤣😆🙃😅🥺😎👀🙈🙉🙊☹😑😄🤐😨😱🌚🌝🤔❤💔🌹💣👌👍😣😥😮🙄😏😕😯😪😫😴😌🤑😉😋😎😍😘😚😛😜😝😒😓😔😲😷🤒😇🤓🤗🤕🙁😖😞😟😤😢😭😦😧😨😩😬😰😳😵😡😠☝✌🖕👎🙏🤘👏💪💋☘🍀🌸☕🍵🍺🍻🍦🍬🍚🍜🍲🍖🎂💤"
+  emoji_full:
+    type: SINGLE
+    name: 全emoji
+    keys: "😀😃😄😁😆😅🤣😂🙂🙃🫠😉😊😇🥰😍🤩😘😗☺😚😙🥲😋😛😜🤪😝🤑🤗🤭🫢🫣🤫🤔🫡🤐🤨😐😑😶🫥😏😒🙄😬🤥😌😔😪🤤😴😷🤒🤕🤢🤮🤧🥵🥶🥴😵🤯🤠🥳🥸😎🤓🧐😕🫤😟🙁☹😮😯😲😳🥺🥹😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱😤😡😠🤬😈👿💀☠💩🤡👹👺👻👽👾🤖😺😸😹😻😼😽🙀😿😾🙈🙉🙊💌💘💝💖💗💓💞💕💟❣💔❤🧡💛💚💙💜🤎🖤🤍💋💯💢💥💫💦💨🕳💬🗨🗯💭💤👋🤚🖐✋🖖🫱🫲🫳🫴👌🤌🤏✌🤞🫰🤟🤘🤙👈👉👆🖕👇☝🫵👍👎✊👊🤛🤜👏🙌🫶👐🤲🤝🙏✍💅🤳💪🦾🦿🦵🦶👂🦻👃🧠🫀🫁🦷🦴👀👁👅👄🫦👶🧒👦👧🧑👱👨🧔👩🧓👴👵🙍🙎🙅🙆💁🙋🧏🙇🤦🤷👮🕵💂🥷👷🫅🤴👸👳👲🧕🤵👰🤰🫃🫄🤱👼🎅🤶🦸🦹🧙🧚🧛🧜🧝🧞🧟🧌💆💇🚶🧍🧎🏃💃🕺🕴👯🧖🧗🤺🏇⛷🏂🏌🏄🚣🏊⛹🏋🚴🚵🤸🤼🤽🤾🤹🧘🛀🛌👭👫👬💏💑👪🗣👤👥🫂👣🏻🏼🏽🏾🏿🦰🦱🦳🦲🐵🐒🦍🦧🐶🐕🦮🐩🐺🦊🦝🐱🐈🦁🐯🐅🐆🐴🐎🦄🦓🦌🦬🐮🐂🐃🐄🐷🐖🐗🐽🐏🐑🐐🐪🐫🦙🦒🐘🦣🦏🦛🐭🐁🐀🐹🐰🐇🐿🦫🦔🦇🐻🐨🐼🦥🦦🦨🦘🦡🐾🦃🐔🐓🐣🐤🐥🐦🐧🕊🦅🦆🦢🦉🦤🪶🦩🦚🦜🐸🐊🐢🦎🐍🐲🐉🦕🦖🐳🐋🐬🦭🐟🐠🐡🦈🐙🐚🪸🐌🦋🐛🐜🐝🪲🐞🦗🪳🕷🕸🦂🦟🪰🪱🦠💐🌸💮🪷🏵🌹🥀🌺🌻🌼🌷🌱🪴🌲🌳🌴🌵🌾🌿☘🍀🍁🍂🍃🪹🪺🍄🍇🍈🍉🍊🍋🍌🍍🥭🍎🍏🍐🍑🍒🍓🫐🥝🍅🫒🥥🥑🍆🥔🥕🌽🌶🫑🥒🥬🥦🧄🧅🥜🫘🌰🍞🥐🥖🫓🥨🥯🥞🧇🧀🍖🍗🥩🥓🍔🍟🍕🌭🥪🌮🌯🫔🥙🧆🥚🍳🥘🍲🫕🥣🥗🍿🧈🧂🥫🍱🍘🍙🍚🍛🍜🍝🍠🍢🍣🍤🍥🥮🍡🥟🥠🥡🦀🦞🦐🦑🦪🍦🍧🍨🍩🍪🎂🍰🧁🥧🍫🍬🍭🍮🍯🍼🥛☕🫖🍵🍶🍾🍷🍸🍹🍺🍻🥂🥃🫗🥤🧋🧃🧉🧊🥢🍽🍴🥄🔪🫙🏺🌍🌎🌏🌐🗺🗾🧭🏔⛰🌋🗻🏕🏖🏜🏝🏞🏟🏛🏗🧱🪨🪵🛖🏘🏚🏠🏡🏢🏣🏤🏥🏦🏨🏩🏪🏫🏬🏭🏯🏰💒🗼🗽⛪🕌🛕🕍⛩🕋⛲⛺🌁🌃🏙🌄🌅🌆🌇🌉♨🎠🛝🎡🎢💈🎪🚂🚃🚄🚅🚆🚇🚈🚉🚊🚝🚞🚋🚌🚍🚎🚐🚑🚒🚓🚔🚕🚖🚗🚘🚙🛻🚚🚛🚜🏎🏍🛵🦽🦼🛺🚲🛴🛹🛼🚏🛣🛤🛢⛽🛞🚨🚥🚦🛑🚧⚓🛟⛵🛶🚤🛳⛴🛥🚢✈🛩🛫🛬🪂💺🚁🚟🚠🚡🛰🚀🛸🛎🧳⌛⏳⌚⏰⏱⏲🕰🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥🕚🕦🌑🌒🌓🌔🌕🌖🌗🌘🌙🌚🌛🌜🌡☀🌝🌞🪐⭐🌟🌠🌌☁⛅⛈🌤🌥🌦🌧🌨🌩🌪🌫🌬🌀🌈🌂☂☔⛱⚡❄☃⛄☄🔥💧🌊🎃🎄🎆🎇🧨✨🎈🎉🎊🎋🎍🎎🎏🎐🎑🧧🎀🎁🎗🎟🎫🎖🏆🏅🥇🥈🥉⚽⚾🥎🏀🏐🏈🏉🎾🥏🎳🏏🏑🏒🥍🏓🏸🥊🥋🥅⛳⛸🎣🤿🎽🎿🛷🥌🎯🪀🪁🎱🔮🪄🎮🕹🎰🎲🧩🧸🪅🪩🪆♠♥♦♣♟🃏🀄🎴🔫🎭🖼🎨🧵🪡🧶🪢👓🕶🥽🥼🦺👔👕👖🧣🧤🧥🧦👗👘🥻🩱🩲🩳👙👚👛👜👝🛍🎒🩴👞👟🥾🥿👠👡🩰👢👑👒🎩🎓🧢🪖⛑📿💄💍💎🔇🔈🔉🔊📢📣📯🔔🔕🎼🎵🎶🎙🎚🎛🎤🎧📻🎷🪗🎸🎹🎺🎻🪕🥁🪘📱📲☎📞📟📠🔋🪫🔌💻🖥🖨⌨🖱🖲💽💾💿📀🧮🎥🎞📽🎬📺📷📸📹📼🔍🔎🕯💡🔦🏮🪔📔📕📖📗📘📙📚📓📒📃📜📄📰🗞📑🔖🏷💰🪙💴💵💶💷💸💳🧾💹✉📧📨📩📤📥📦📫📪📬📭📮🗳✏✒🖋🖊🖌🖍📝💼📁📂🗂📅📆🗒🗓📇📈📉📊📋📌📍📎🖇📏📐✂🗃🗄🗑🔒🔓🔏🔐🔑🗝💣🔨🪓⛏⚒🛠🗡⚔🪃🏹🛡🪚🔧🪛🔩⚙🗜⚖🦯🔗⛓🪝🧰🧲🪜⚗🧪🧫🧬🔬🔭📡💉🩸💊🩹🩼🩺🩻🚪🛗🪞🪟🛏🛋🪑🚽🪠🚿🛁🪤🪒🧴🧷🧹🧺🧻🪣🧼🫧🪥🧽🧯🛒🧿🪬🚬⚰🪦⚱🗿🪧🪪🏧🚮🚰♿🚹🚺🚻🚼🚾🛂🛃🛄🛅⚠🚸⛔🚫🚳🚭🚯🚱🚷📵🔞☢☣⬆↗➡↘⬇↙⬅↖↕↔↩↪⤴⤵🔃🔄🔙🔚🔛🔜🔝🛐⚛🕉✡☸☯✝☦☪☮🕎🔯♈♉♊♋♌♍♎♏♐♑♒♓⛎🔀🔁🔂▶⏩⏭⏯◀⏪⏮🔼⏫🔽⏬⏸⏹⏺⏏🎦🔅🔆📶📳📴♀♂⚧✖➕➖➗🟰♾‼⁉❓❔❕❗〰💱💲⚕♻⚜🔱📛🔰⭕✅☑✔❌❎➰➿〽✳✴❇©®™🔟🔠🔡🔢🔣🔤🅰🆎🅱🆑🆒🆓ℹ🆔Ⓜ🆕🆖🅾🆗🅿🆘🆙🆚🈁🈂🈷🈶🈯🉐🈹🈚🈲🉑🈸🈴🈳㊗㊙🈺🈵🔴🟠🟡🟢🔵🟣🟤⚫⚪🟥🟧🟨🟩🟦🟪🟫⬛⬜◼◻◾◽▪▫🔶🔷🔸🔹🔺🔻💠🔘🔳🔲🏁🚩🎌🏴🏳"
+  math:   #tab名称
+    type: SINGLE
+    name: 数学
+    keys: "≈＝≠≌<>≤≥≡()[]{}-+±×*/÷&∥%‰‱°′″∫∮∯∬∭∰∞∑∧∏∈∵∴⊥∝∨∪•√〒∝∽∈∩∧⊙⌒∥∟∣∂∆∞≌∉∪∨⊕⊿⊥∠∫∬∭"  #tab中的按键列表
+  cn:
+    type: SINGLE
+    name: 中文
+    keys:  #keys列表可以使用多种格式混合书写。
+      - ，
+      - 。
+      - ？
+      - ！
+      - ：
+      - 、
+      - “
+      - ”
+      - ‘
+      - ···
+      - ……
+      - { click: "-" }
+      - { click: "——", label: "破折" }
+      - { click: "" } # 内容为空可以强制令键盘从此处新起一行
+      - （
+      - ）
+      - 【
+      - 】
+      - 《
+      - 》
+      - ［
+      - ］
+      - ｛
+      - ｝
+      - 「
+      - 」
+      - 『
+      - 』
+      - ～
+  symbol:
+    name: 特殊
+    type: SINGLE
+    keys: "△▽○◇□☆▲▼●◆■★▷◁▶◀♻♲†⚝✡⚹✦✸✹￼�×⌫☑☒✅❎✔✘✓✗☀☼☽☾◑◐㏂㏘☭♀♂☹☻☠☜☝☞☚☟☛▪•‥…∷※♩♪♫♬§°♭♯♮‖¶№◎¤۞℗®©卍卐℡™㏇Φ⇦⇧⇨⇩⇪↖↑↗←↔→↙↓↘⇄⇅⇆⇤↩⇥▸◂▴▾◤◥◣◢㊤㊧㊥㊨㊦❏❐◲〼▢▣↶✁↷✍⏍ϟ📝✎✆☱☰☴⚿⛮⚙☲☯☵⛶☩☐☳☷☶💬🗨⟲ღ✈☂🎤🌐🔍"
+  unit:
+    name: 单位
+    type: SINGLE
+    keys: "℃¥$€฿￡㎡m³℉￥£￠₠¹²³⁴⁵ⁿ⁶⁷⁸⁹⁰ˣ⁺⁻⁼⁽⁾½⅓¼⅔¾₁₂₃₄₅ₙ₆₇₈₉₀ₓ₊₋₌₍₎℅"
+  list:
+    name: 列表
+    type: SINGLE
+    keys: "①②③④⑤⑥⑦⑧⑨⑩⒈⒉⒊⒋⒌⒍⒎⒏⒐⒑⒒⒓⒔⒕⒖⒗⒘⒙⒚⒛⑴⑵⑶⑷⑸⑹⑺⑻⑼⑽⑾⑿⒀⒁⒂⒃⒄⒅⒆⒇㈠㈡㈢㈣㈤㈥㈦㈧㈨㈩➊➋➌➍➎➏➐➑➒➓㊀㊁㊂㊃㊄㊅㊆㊇㊈㊉ⅰⅱⅲⅳⅴⅵⅶⅷⅸⅹⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ"
+  pinyin:
+    name: 拼音
+    type: SINGLE
+    keys: "āáǎàōóēéěèǒòīíǐìūúǖǘǚǜǔùêüńňㄚㄛㄜㄧㄨㄩㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙ"
+  script_symbols:
+    name: 𝒶𝒜
+    type: SINGLE
+    keys: "𝒶𝒷𝒸𝒹ℯ𝒻ℊ𝒽𝒾𝒿𝓀𝓁𝓂𝓃ℴ𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵"
+  grease:
+    type: SINGLE
+    name: 希腊
+    keys: "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφχψω"
+  rusa:
+    name: 俄语
+    type: SINGLE
+    keys: "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+  lation:
+    name: 拉丁
+    type: SINGLE
+    keys: "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞŠŸŒàáâãäåæçèéêëìíîïðñòóõôöøùúûüýþšÿœ"
+  korea:
+    type: SINGLE
+    name: "韩文"
+    keys: "dㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣㅐㅒㅔㅖㅘㅙㅚㅝㅞㅟㅢㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎㄲㄸㅚㅆㅉ㉠㉡㉢㉣㉤㉥㉦㉧㉨㉩㉪㉫㉬㉭㉮㉯㉰㉱㉲㉳㉴㉵㉶㉷㉸㉹㉺㉻㈀㈁㈂㈃㈄㈅㈆㈇㈈㈉㈊㈋㈌㈍㈎㈏㈐㈑㈒㈓㈔㈕㈖㈗㈘㈙㈚㈛"
+  yinbiao:
+    type: SINGLE
+    name: "音标"
+    keys: ["a:", "ɔ:", "ɜː", "i:", "u:", "ʌ", "ɒ", "ə", "ɪ", "ʊ", "e", "æ", "eɪ", "aɪ", "ɔɪ", "ɪə", "eə", "ʊə", "əʊ", "aʊ", "p", "t", "k", "f", "θ", "s", "b", "d", "g", "v", "ð", "z", "ʃ", "h", "ts", "tʃ", "j", "tr", "ʒ", "r", "dz", "dʒ", "dr", "w", "m", "n", "ŋ", "l"]
+  yanwenzi:
+    type: SINGLE
+    name: "颜文字"
+    keys: ["⎛⎝≥⏝⏝≤⎠⎞", "^_^", "^ω^", "^o^", "~\\(≧▽≦)/~", "*^_^*", "↖(^ω^)↗", "(^o^)／", "(=^▽^=)", "=^_^=", "(*^ω^*)", "٩(๑^o^๑)۶", "o(￣▽￣)o", "Y(^_^)Y", "٩( 'ω' )و", "╰(*´︶`*)╯", "*罒▽罒*", "ヾ ^_^♪", "=￣ω￣=", "︿(￣︶￣)︿", "(´▽｀)ノ♪", "乁( ˙ ω˙乁)", "✧*｡٩(ˊωˋ*)و✧*｡", "～(￣▽￣～)(～￣▽￣)～", "QwQ", "(●—●)", "(๑• . •๑)", "ヾ(≧O≦)〃嗷~", "罒ω罒", "(｡ì _ í｡)", "(๑•ี_เ•ี๑)", "ㄟ(≧◇≦)ㄏ", "(*/ω＼*)", "●▽●", "٩(๑òωó๑)۶", "✺◟(∗❛ัᴗ❛ั∗)◞✺", "( σ'ω')σ", "♡＾▽＾♡", "(๑•̀ㅂ•́)و✧", "(ง •̀_•́)ง", "(｡･ω･｡)ﾉ♡", "(☆_☆)", "(๑°3°๑)", "_(•̀ω•́ 」∠)_", "♪～(´ε｀　)", "～(^з^)-☆", "(´∀｀)♡", "ლ(´ڡ`ლ)", "(＞﹏＜)", "T_T", "⊙︿⊙", "〒▽〒", "⊙﹏⊙", "π_π", "(｡•́︿•̀｡)", "(ToT)/~~~", "╯﹏╰", "ಥ_ಥ", "(╥╯^╰╥)", "(〃′o`)", "●﹏●", "( •̥́ ˍ •̀ू )", "(つд⊂)", "心塞(´-ωก`)", "(╥﹏╥)", "┭┮﹏┭┮", "（；´д｀）ゞ", "(´;︵;`)", "(。﹏。)", "┗( T﹏T )┛", "QAQ", "ヘ(_ _ヘ)", "╰（‵□′）╯", "(*￣︿￣)", ">o<", "(-`ェ´-怒)", "ヽ(‘⌒´メ)ノ", "(*｀Ω´*)v", "(｡•ˇ‸ˇ•｡)", "(怒｀Д´怒)", "٩(๑`^´๑)۶", "(;｀O´)o", "╰_╯", "(#｀皿´)<怒怒怒!!!", "<(｀^´)>", "（｀Δ´）！", "ψ(｀∇´)ψ", "(；′⌒`)", "s(・｀ヘ´・;)ゞ", "(▼皿▼#)", "￣へ￣", "←_←", "（╯‵□′）╯︵┴─┴", "（▼へ▼メ）", "☄ฺ(◣д◢)☄ฺ", "→_→", "⊙_⊙", "d(ŐдŐ๑)", "Σ( ° △ °|||)︴", "(((φ(◎ロ◎;)φ)))", "⊙▽⊙", "(๑ŐдŐ)b", "╭(°A°`)╮", "(๑òᆺó๑)", "⊙ω⊙", "Σ(っ °Д °;)っ", " (ﾟДﾟ≡ﾟдﾟ)!?", "( *・ω・)✄╰ひ╯", "(⊙x⊙;)", "┌(。Д。)┐", "(°ー°〃)", "︽⊙_⊙︽", "!!!∑(°Д°ノ)ノ", "(๑ŐдŐ)b☆d(ŐдŐ๑)", "Σ⊙▃⊙川", "ヽ(*。>Д<)o゜", "━((*′д｀)爻(′д｀*))━!!!!", "=_=", "╮(╯_╰)╭", "（︶︿︶）", "_(:з」∠)_", "@_@", "╮(╯▽╰)╭", "(＠￣ー￣＠)", "_(:3」∠❀)_", "눈_눈", "╭(╯ε╰)╮", "(ー_ー)!!", "_(:D)∠)_", "o_O", "╭(╯^╰)╮", "(；一_一)", "´_>`", "-_-#", "┑(￣Д ￣)┍", "≡￣﹏￣≡", "○|￣|_", "-_-||", "ㄟ( ▔, ▔ )ㄏ", "( ＿ ＿)ノ｜壁", "▄█▀█●"]
+  combing:
+    type: SINGLE
+    name: "组合" #combing character
+    keys: ["⃢", "꯭", "̣", "̲"  ]
+  ascii:
+    type: SINGLE
+    name: 英文
+    keys: ",.?!:;/\\|*-+=$`'\"^~@#%&()[]{}_"
+  ids:
+    type: SINGLE
+    name: IDS
+    keys: "⿰⿱⿲⿳⿴⿵⿶⿷⿸⿹⿺⿻↷↔"
+  jp:
+    type: SINGLE
+    name: 假名
+    keys: "あいうえおかがきぎくぐけげこごさざしじすずせぜそぞただちぢつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろわをんアィイウェエオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロワヲン"
+  symbollist:
+    type: SYMBOL
+    name: 符号表
+    keys: [ 符号: '/fh', 电脑: '/dn', 象棋: '/xq', 麻将: '/mj', 骰子: '/sz', 扑克: '/pk', 天气: '/tq', 音乐: '/yy', 八卦: '/bg', 易经: '/lssg', 天体: '/tt',  星座: '/xz',  星号: '/xh',  方块: '/fk',  几何: '/jh',  箭头: '/jt',  数学: '/sx',  上标: '/sb',  下标: '/xb',  单位: '/dw',  货币: '/hb',  拼音: '/py',  注音: '/zy',  假名: '/jm',  片假: '/pjm',  韩文: '/hw',  希腊: '/xl',  希大: '/xld', 罗马:   '/lm',  罗大:   '/lmd', 俄语:   '/ey',  俄大:   '/eyd', 表情:  '/bq',  一: '/1',  二: '/2',  三: '/3',  四: '/4',  五: '/5',  六: '/6',  七: '/7',  八: '/8',  九: '/9',  零: '/0',  十: '/10',  分数: '/fs',  标点: '/bd',  偏旁: '/pp',  竖标:  '/bdz'  ]
+  
+
+
+preset_keyboards:
+  default:
+    name: 微信输入法·26键
+    ascii_mode: 0
+    width: 10
+    height: 60
+    label_transform: none
+    lock: true
+    keys:
+      - {click: 'q', long_click: '1'}
+      - {click: 'w', long_click: '2'}
+      - {click: 'e', long_click: '3'}
+      - {click: 'r', long_click: '4'}
+      - {click: 't', long_click: '5'}
+      - {click: 'y', long_click: '6'}
+      - {click: 'u', long_click: '7'}
+      - {click: 'i', long_click: '8'}
+      - {click: 'o', long_click: '9'}
+      - {click: 'p', long_click: '0'}
+      - {width: 5}
+      - {click: 'a', long_click: select_all, label_symbol: '全选'}
+      - {click: 's', long_click: '#'}
+      - {click: 'd', long_click: '$'}
+      - {click: 'f', long_click: '%'}
+      - {click: 'g', long_click: '&'}
+      - {click: 'h', long_click: '*'}
+      - {click: 'j', long_click: '-'}
+      - {click: 'k', long_click: '+'}
+      - {click: 'l', long_click: '='}
+      - {width: 5}
+      - {click: Shift_L, __include: styl/bigicon, width: 15, key_text_color: shift_arrow_color}
+      - {click: 'z', long_click: '(', label_symbol: '('}
+      - {click: 'x', long_click: cut, label_symbol: '剪切'}
+      - {click: 'c', long_click: copy, label_symbol: '复制'}
+      - {click: 'v', long_click: paste, label_symbol: '粘贴'}
+      - {click: 'b', long_click: '~', label_symbol: '~'}
+      - {click: 'n', long_click: ';', label_symbol: ';'}
+      - {click: 'm', long_click: ':', label_symbol: ':'}
+      - {click: BackSpace, __include: styl/bigicon, width: 15}
+      - {click: Keyboard_number, long_click: Keyboard_symbols, __include: styl/gray, width: 15}
+      - {click: Keyboard_cmdsym, label_symbol: '简洁', long_click: SwitchSymbols, __include: styl/gray, width: 10, key_text_size: 26}
+      - {click: ',', long_click: '。', width: 10}
+      - {click: space, long_click: VOICE_ASSIST, label_symbol: ' ', width: 35}
+      - {click: Mode_switch, long_click: Menu, label_symbol: '方案', width: 15}
+      - {click: Return, composing: Return_ok, __include: styl/green, width: 15}
+  letter:
+    __include: /preset_keyboards/default
+    ascii_mode: 1
+    reset_ascii_mode: true
+    label_transform: none
+  number:
+    name: 数字键盘
+    ascii_mode: 1
+    width: 20
+    height: 56
+    keyboard_height: 350
+    keys:
+      - {click: '+', long_click: '*', symbol_text_size: 16, key_symbol_color: num_hint_color, __include: styl/gray}
+      - {click: '1'}
+      - {click: '2'}
+      - {click: '3'}
+      - {click: BackSpace, __include: styl/bigicon}
+      - {click: '-', long_click: '/', symbol_text_size: 16, key_symbol_color: num_hint_color, __include: styl/gray}
+      - {click: '4'}
+      - {click: '5'}
+      - {click: '6'}
+      - {click: space1, __include: styl/gray}
+      - {click: '×', long_click: '%', symbol_text_size: 16, key_symbol_color: num_hint_color, __include: styl/gray}
+      - {click: '7'}
+      - {click: '8'}
+      - {click: '9'}
+      - {click: '=', __include: styl/gray}
+      - {click: Keyboard_backarrow, __include: styl/green}
+      - {click: Keyboard_cmdsym}
+      - {click: '0'}
+      - {click: '.'}
+      - {click: Return, composing: Return_ok, __include: styl/green}
+
+  symbols_recent:
+    name: 最近
+    ascii_mode: 1
+    width: 10
+    height: 58
+    keyboard_height: 320
+    keys:
+      - {height: 100, click: '。'}
+      - {click: '，'}
+      - {click: '、'}
+      - {click: '？'}
+      - {click: '！'}
+      - {click: '：'}
+      - {click: '；'}
+      - {click: '…'}
+      - {click: '—'}
+      - {click: '—'}
+      - {height: 100, click: '“'}
+      - {click: '”'}
+      - {click: '‘'}
+      - {click: '’'}
+      - {click: '（'}
+      - {click: '）'}
+      - {click: '【'}
+      - {click: '】'}
+      - {click: '《'}
+      - {click: '》'}
+      - {height: 100, click: Keyboard_number, label: '123', __include: styl/gray, width: 20, key_text_size: 24}
+      - {click: '～'}
+      - {click: '·'}
+      - {click: '、'}
+      - {click: '…'}
+      - {click: '"'}
+      - {click: '!'}
+      - {click: BackSpace, __include: styl/bigicon, width: 20}
+      - {height: 80, click: Keyboard_backarrow, __include: styl/green, width: 20}
+      - {width: 1}
+      - {click: Sym_page_recent, key_back_color: sym_page_selected, key_border: 0, round_corner: 40, width: 11, key_text_size: 14}
+      - {click: Sym_page_cn, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_en, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_quote, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 13}
+      - {click: Sym_page_curr, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 12}
+      - {click: Sym_page_math, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 11}
+      - {click: Sym_page_num, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+  symbols:
+    name: 符号
+    ascii_mode: 1
+    width: 10
+    height: 58
+    keyboard_height: 320
+    keys:
+      - {height: 100, click: '_'}
+      - {click: '—'}
+      - {click: ';'}
+      - {click: '#'}
+      - {click: '%'}
+      - {click: '&'}
+      - {click: '^'}
+      - {click: '*'}
+      - {click: '+'}
+      - {click: '='}
+      - {height: 100, click: '-'}
+      - {click: '/'}
+      - {click: ':'}
+      - {click: '~'}
+      - {click: '('}
+      - {click: ')'}
+      - {click: '…'}
+      - {click: '@'}
+      - {click: '“'}
+      - {click: '”'}
+      - {height: 100, click: Keyboard_number, label: '123', __include: styl/gray, width: 20, key_text_size: 24}
+      - {click: '。'}
+      - {click: '，'}
+      - {click: '、'}
+      - {click: '?'}
+      - {click: '！'}
+      - {click: '.'}
+      - {click: BackSpace, __include: styl/bigicon, width: 20}
+      - {height: 80, click: Keyboard_backarrow, __include: styl/green, width: 20}
+      - {width: 1}
+      - {click: Sym_page_recent, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 14}
+      - {click: Sym_page_cn, key_back_color: sym_page_selected, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_en, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_quote, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 13}
+      - {click: Sym_page_curr, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 12}
+      - {click: Sym_page_math, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 11}
+      - {click: Sym_page_num, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+  symbols_en:
+    name: 英文符号
+    ascii_mode: 1
+    width: 10
+    height: 58
+    keyboard_height: 320
+    keys:
+      - {height: 100, click: '_'}
+      - {click: '—'}
+      - {click: '|'}
+      - {click: '#'}
+      - {click: '%'}
+      - {click: '&'}
+      - {click: '^'}
+      - {click: '*'}
+      - {click: '+'}
+      - {click: '='}
+      - {height: 100, click: '~'}
+      - {click: '/'}
+      - {click: ':'}
+      - {click: ';'}
+      - {click: '('}
+      - {click: ')'}
+      - {click: '$'}
+      - {click: '@'}
+      - {click: '"'}
+      - {click: '·'}
+      - {height: 100, click: Keyboard_number, label: '123', __include: styl/gray, width: 20, key_text_size: 24}
+      - {click: '.'}
+      - {click: ','}
+      - {click: '?'}
+      - {click: '!'}
+      - {click: '…'}
+      - {click: "'"}
+      - {click: BackSpace, __include: styl/bigicon, width: 20}
+      - {height: 80, click: Keyboard_backarrow, __include: styl/green, width: 20}
+      - {width: 1}
+      - {click: Sym_page_recent, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 14}
+      - {click: Sym_page_cn, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_en, key_back_color: sym_page_selected, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_quote, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 13}
+      - {click: Sym_page_curr, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 12}
+      - {click: Sym_page_math, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 11}
+      - {click: Sym_page_num, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+  symbols_quote:
+    name: 引号括号
+    ascii_mode: 1
+    width: 10
+    height: 58
+    keyboard_height: 320
+    keys:
+      - {height: 100, click: '【'}
+      - {click: '】'}
+      - {click: '「'}
+      - {click: '」'}
+      - {click: '（'}
+      - {click: '）'}
+      - {click: '['}
+      - {click: ']'}
+      - {click: '{'}
+      - {click: '}'}
+      - {height: 100, click: '〔'}
+      - {click: '〕'}
+      - {click: '『'}
+      - {click: '』'}
+      - {click: '〈'}
+      - {click: '〉'}
+      - {click: '<'}
+      - {click: '>'}
+      - {click: '《'}
+      - {click: '》'}
+      - {height: 100, click: Keyboard_number, label: '123', __include: styl/gray, width: 20, key_text_size: 24}
+      - {click: '«'}
+      - {click: '»'}
+      - {click: '“'}
+      - {click: '”'}
+      - {click: '‘'}
+      - {click: '’'}
+      - {click: BackSpace, __include: styl/bigicon, width: 20}
+      - {height: 80, click: Keyboard_backarrow, __include: styl/green, width: 20}
+      - {width: 1}
+      - {click: Sym_page_recent, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 14}
+      - {click: Sym_page_cn, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_en, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_quote, key_back_color: sym_page_selected, key_border: 0, round_corner: 40, width: 11, key_text_size: 13}
+      - {click: Sym_page_curr, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 12}
+      - {click: Sym_page_math, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 11}
+      - {click: Sym_page_num, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+  symbols_curr:
+    name: 货币
+    ascii_mode: 1
+    width: 10
+    height: 58
+    keyboard_height: 320
+    keys:
+      - {height: 100, click: '$'}
+      - {click: '¥'}
+      - {click: '₤'}
+      - {click: '€'}
+      - {click: '¢'}
+      - {click: '₿'}
+      - {click: '₨'}
+      - {click: '₩'}
+      - {click: '₪'}
+      - {click: '¦'}
+      - {height: 100, click: '{'}
+      - {click: '}'}
+      - {click: '['}
+      - {click: ']'}
+      - {click: '<'}
+      - {click: '>'}
+      - {click: '\'}
+      - {click: '´'}
+      - {click: '‖'}
+      - {click: '§'}
+      - {height: 100, click: Keyboard_number, label: '123', __include: styl/gray, width: 20, key_text_size: 24}
+      - {click: '¡'}
+      - {click: '¿'}
+      - {click: '·'}
+      - {click: '"'}
+      - {click: '‖'}
+      - {click: '→'}
+      - {click: BackSpace, __include: styl/bigicon, width: 20}
+      - {height: 80, click: Keyboard_backarrow, __include: styl/green, width: 20}
+      - {width: 1}
+      - {click: Sym_page_recent, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 14}
+      - {click: Sym_page_cn, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_en, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_quote, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 13}
+      - {click: Sym_page_curr, key_back_color: sym_page_selected, key_border: 0, round_corner: 40, width: 11, key_text_size: 12}
+      - {click: Sym_page_math, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 11}
+      - {click: Sym_page_num, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+  symbols_math:
+    name: 数学
+    ascii_mode: 1
+    width: 10
+    height: 58
+    keyboard_height: 320
+    keys:
+      - {height: 100, click: '+'}
+      - {click: '-'}
+      - {click: '×'}
+      - {click: '÷'}
+      - {click: '/'}
+      - {click: '='}
+      - {click: '≠'}
+      - {click: '≈'}
+      - {click: '>'}
+      - {click: '<'}
+      - {height: 100, click: '·'}
+      - {click: '±'}
+      - {click: '^'}
+      - {click: '%'}
+      - {click: '‰'}
+      - {click: '≥'}
+      - {click: '≤'}
+      - {click: '⊂'}
+      - {click: '⊃'}
+      - {click: '≅'}
+      - {height: 100, click: Keyboard_number, label: '123', __include: styl/gray, width: 20, key_text_size: 24}
+      - {click: '√'}
+      - {click: '∛'}
+      - {click: '∜'}
+      - {click: '°'}
+      - {click: '℃'}
+      - {click: '℉'}
+      - {click: BackSpace, __include: styl/bigicon, width: 20}
+      - {height: 80, click: Keyboard_backarrow, __include: styl/green, width: 20}
+      - {width: 1}
+      - {click: Sym_page_recent, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 14}
+      - {click: Sym_page_cn, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_en, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_quote, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 13}
+      - {click: Sym_page_curr, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 12}
+      - {click: Sym_page_math, key_back_color: sym_page_selected, key_border: 0, round_corner: 40, width: 11, key_text_size: 11}
+      - {click: Sym_page_num, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+  symbols_num:
+    name: 序号
+    ascii_mode: 1
+    width: 10
+    height: 58
+    keyboard_height: 320
+    keys:
+      - {height: 100, click: '①'}
+      - {click: '②'}
+      - {click: '③'}
+      - {click: '④'}
+      - {click: '⑤'}
+      - {click: '⑥'}
+      - {click: '⑦'}
+      - {click: '⑧'}
+      - {click: '⑨'}
+      - {click: '⑩'}
+      - {height: 100, click: '⑴'}
+      - {click: '⑵'}
+      - {click: '⑶'}
+      - {click: '⑷'}
+      - {click: '⑸'}
+      - {click: '⑹'}
+      - {click: '⑺'}
+      - {click: '⑻'}
+      - {click: '⑼'}
+      - {click: '⑽'}
+      - {height: 100, click: Keyboard_number, label: '123', __include: styl/gray, width: 20, key_text_size: 24}
+      - {click: '㈠'}
+      - {click: '㈡'}
+      - {click: '㈢'}
+      - {click: '㈣'}
+      - {click: '㈤'}
+      - {click: '㈥'}
+      - {click: BackSpace, __include: styl/bigicon, width: 20}
+      - {height: 80, click: Keyboard_backarrow, __include: styl/green, width: 20}
+      - {width: 1}
+      - {click: Sym_page_recent, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 14}
+      - {click: Sym_page_cn, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_en, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
+      - {click: Sym_page_quote, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 13}
+      - {click: Sym_page_curr, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 12}
+      - {click: Sym_page_math, key_back_color: 0x00000000, key_border: 0, round_corner: 40, width: 11, key_text_size: 11}
+      - {click: Sym_page_num, key_back_color: sym_page_selected, key_border: 0, round_corner: 40, width: 11, key_text_size: 16}
